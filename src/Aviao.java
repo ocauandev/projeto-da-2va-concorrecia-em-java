@@ -73,7 +73,7 @@ public class Aviao extends Thread implements IAviao {
     /**
      * Atende estritamente à regra: "Aviões atualizam os arquivos de status das pistas".
      */
-    private void atualizarArquivoTexto(IPista pista, String status) {
+   /* private void atualizarArquivoTexto(IPista pista, String status) {
         try (FileWriter fw = new FileWriter(pista.getNomeArquivoStatus(), false);
              PrintWriter pw = new PrintWriter(fw)) {
             pw.println("Pista " + pista.getIdPista() + ": " + status + " por Voo " + this.idVoo); //
@@ -81,6 +81,8 @@ public class Aviao extends Thread implements IAviao {
             System.err.println("Erro ao gravar arquivo de texto pelo avião " + idVoo);
         }
     }
+    */
+
 
     private void simularTempo(String acao) throws InterruptedException {
         // Variação pseudo-aleatória somada ao delay base do arquivo de configuração [cite: 35]
